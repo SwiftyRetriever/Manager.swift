@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D07C81D20580D9200D11AD4 /* VersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07C81C20580D9200D11AD4 /* VersionManager.swift */; };
+		4D07C81F20580DA300D11AD4 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07C81E20580DA300D11AD4 /* AccountManager.swift */; };
 		4D7F3B7A2055242E0068268A /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7F3B782055242E0068268A /* Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D7F3BA1205527530068268A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F3BA0205527520068268A /* AppDelegate.swift */; };
+		4D7F3BA3205527AF0068268A /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F3BA2205527AF0068268A /* UIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D07C81C20580D9200D11AD4 /* VersionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionManager.swift; sourceTree = "<group>"; };
+		4D07C81E20580DA300D11AD4 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		4D7F3B752055242E0068268A /* Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7F3B782055242E0068268A /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		4D7F3B792055242E0068268A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7F3BA0205527520068268A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D7F3BA2205527AF0068268A /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				4D7F3B782055242E0068268A /* Manager.h */,
 				4D7F3B792055242E0068268A /* Info.plist */,
+				4D7F3BA0205527520068268A /* AppDelegate.swift */,
+				4D7F3BA2205527AF0068268A /* UIManager.swift */,
+				4D07C81C20580D9200D11AD4 /* VersionManager.swift */,
+				4D07C81E20580DA300D11AD4 /* AccountManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					4D7F3B742055242E0068268A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7F3BA1205527530068268A /* AppDelegate.swift in Sources */,
+				4D07C81D20580D9200D11AD4 /* VersionManager.swift in Sources */,
+				4D7F3BA3205527AF0068268A /* UIManager.swift in Sources */,
+				4D07C81F20580DA300D11AD4 /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +270,7 @@
 		4D7F3B7E2055242E0068268A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zevwings.Manager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +293,7 @@
 		4D7F3B7F2055242E0068268A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
