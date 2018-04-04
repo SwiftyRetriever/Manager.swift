@@ -6,7 +6,8 @@
 //  Copyright © 2018年 zevwings. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Utils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIManager.manager.window
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "navigation_back")
+
+//        if #available(iOS 9.0, *) {
+//        } else {
+//            MethodLoader.once
+//        }
+//        window = UIManager.manager.window
         
         return true
     }
